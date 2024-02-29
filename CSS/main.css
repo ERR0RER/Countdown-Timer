@@ -1,0 +1,117 @@
+html, body  {
+	width: 100%;
+	height: 100%;
+	
+}
+::selection {
+	background-color: transparent; 
+}
+
+::-moz-selection {
+	background-color: transparent;
+}
+
+
+::selection {
+	color: red; 
+}
+
+::-moz-selection {
+	color: red;
+}
+:root {
+		font-family: "Anta", sans-serif;
+		font-weight: 400;
+		font-size: 25px;
+		font-style: normal;
+}
+body {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background:linear-gradient(to right bottom,rgb(79, 205, 243), rgb(82, 82, 245), rgb(99, 38, 150), violet, pink );
+	filter: blur(15px);
+}
+.container {
+	min-width: 302px;
+	position: relative;
+	width: clamp(350px, 75%, 500px);
+	z-index: 1;
+	aspect-ratio: 8/6;
+}
+.timer {
+	border-radius: 15px;
+	position: relative;
+	top: calc(50% - 100px);
+	width: clamp(200px, 100%, 300px);
+	height: 200px;
+	border: 2px solid;
+	border-color: blueviolet blue blue blueviolet;
+	margin:auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+.setting {
+	width: clamp(200px, 100%, 300px);
+	height: 60px;
+	border-radius:0 0 15px 15px;
+	position: relative;
+	margin:auto;
+	top: calc(50% - 163px);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.set-time {
+	font-family: "Anta", sans-serif;
+	font-weight: 400;
+
+	height: 25px;
+	width: 100px;
+	border-radius: 7px;
+	border: dashed 2px;
+	background: transparent;
+	caret-color: violet;
+	transition: 0.5s ease;
+}
+.set-time:focus-visible {
+	outline: none;
+	scale: 1.05;
+	transition: 0.5s ease;
+}
+.start-time {
+	font-family: "Anta", sans-serif;
+	font-weight: 400;
+
+	width: 100px;
+	background: transparent;
+	height: 30px;
+	border-radius: 7px;
+	border: dashed 2px;
+	transition: 0.5s ease;
+}
+.start-time:hover {
+	scale: 1.05;
+	transition: 0.5s ease;
+}
+
+
+.content {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: calc(50% - 25px);
+	border-radius: 10px;
+	display: flex;
+	height: 50px;
+	width: clamp(30px, 100%, 50px);
+	border: 2px dashed black;
+}
