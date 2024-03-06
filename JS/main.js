@@ -26,9 +26,9 @@ function updateTimer(){
 	if(time <= 0){
 		button.disabled = false;
 		clearInterval(timerInterval);
-	}else {
+	}else 
 		time--;
-	}
+	
 }
 updateTimer();
 
