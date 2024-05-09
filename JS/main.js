@@ -10,7 +10,7 @@ var hours = document.getElementById('hour');
 var minutes = document.getElementById('minute');
 var seconds = document.getElementById('second');
 
-var time = data;
+var time = data * 60;
 
 function updateTimer(){
 	var day = Math.floor(time / (60 * 60 * 24));
